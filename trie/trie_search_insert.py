@@ -6,9 +6,11 @@ class TrieNode:
         # isEndOfWord is True if node represent the end of the word
         self.isEndOfWord = False
 
+
 class Solution:
     # Function to insert string into TRIE.
-    def insert(self, root, key):
+    @staticmethod
+    def insert(root, key):
         # code here
         if len(key) == 0:
             return
@@ -26,7 +28,8 @@ class Solution:
         temp.isEndOfWord = True
 
     # Function to use TRIE data structure and search the given string.
-    def search(self, root, key):
+    @staticmethod
+    def search(root, key):
 
         # code here
         if len(key) == 0:
