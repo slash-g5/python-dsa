@@ -1,4 +1,5 @@
 # User function Template for python3
+# https://www.geeksforgeeks.org/problems/strongly-connected-components-kosarajus-algo/1
 
 class Solution:
 
