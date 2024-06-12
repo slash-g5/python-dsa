@@ -15,7 +15,6 @@ class Solution:
         pos_speed.sort(key=lambda x: x[0])
 
         ans = 1
-
         stack = [n - 1]
 
         for i in range(n - 2, -1, -1):
