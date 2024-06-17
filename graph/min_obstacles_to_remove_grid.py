@@ -41,3 +41,30 @@ class Solution:
                     heapq.heappush(heap, (dist[next_node[0]][next_node[1]], next_node))
 
         return -1
+
+
+if __name__ == "__main__":
+    def test_returns_zero_for_no_obstacles():
+        grid = [
+            [0, 0, 0],
+            [0, 0, 0],
+            [0, 0, 0]
+        ]
+        solution = Solution()
+        assert solution.minimumObstacles(grid) == 0
+
+    def test_calculates_minimum_obstacles_mixed_values():
+        grid = [[0, 1, 1], [1, 0, 1], [1, 1, 0]]
+        result = Solution.minimumObstacles(grid)
+        assert result == 2
+
+    def test_all_cells_as_obstacles():
+        grid = [[0, 1, 1], [1, 1, 1], [1, 1, 1]]
+        result = Solution.minimumObstacles(grid)
+        assert result == 3
+
+    test_returns_zero_for_no_obstacles()
+    test_calculates_minimum_obstacles_mixed_values()
+    test_returns_zero_for_no_obstacles()
+
+
