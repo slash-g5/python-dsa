@@ -32,8 +32,8 @@ def fibonacci(n):
     B = [[1, 1], [1, 0]]
     A2 = [[1], [0]]
 
-    return sum(multiply(mat_expo(B, n-2), A2)[0])
+    return sum(multiply(mat_expo(B, n-1), A2)[0])
 
 
 if __name__ == "__main__":
-    print(fibonacci(66))
+    print(fibonacci(500))
